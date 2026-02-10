@@ -22,7 +22,7 @@
 
 ```bash
 cd /Users/faiqnau/fight
-git clone https://github.com/vforvaick/mission-control.git
+git clone https://github.com/vforvaick/isekai-crossover-legion.git mission-control
 cd mission-control
 ```
 
@@ -293,4 +293,4 @@ ssh fight-uno "pm2 monit"
 
 - **VPS**: `fight-uno` (IP in .ssh/config)
 - **Convex Project**: `ceaseless-bullfrog-373`
-- **GitHub Repo**: https://github.com/vforvaick/mission-control
+- **GitHub Repo**: https://github.com/vforvaick/isekai-crossover-legion

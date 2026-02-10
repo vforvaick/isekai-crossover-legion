@@ -44,6 +44,7 @@ mission-control/
 - **Dashboard**: https://mission-control-dashboard-amber.vercel.app
 - **Convex**: https://dashboard.convex.dev/d/ceaseless-bullfrog-373
 - **Agents**: VPS `fight-uno` (PM2-managed)
+- **GitHub**: https://github.com/vforvaick/isekai-crossover-legion
 
 ## Development
 

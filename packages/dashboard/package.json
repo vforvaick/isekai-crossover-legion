@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run codegen:convex && next build",
-    "codegen:convex": "cd ../convex && npm install && npm run codegen",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },

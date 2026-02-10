@@ -1,5 +1,35 @@
 # Changelog
 
+## [2026-02-11] - Monorepo Migration & Vercel Deployment
+### Added
+- **Monorepo Structure**: Migrated from standalone repos to `isekai-crossover-legion` monorepo with npm workspaces
+- **`packages/dashboard`**: Next.js dashboard (previously `mission-control-dashboard`)
+- **`packages/convex`**: Shared Convex schema and functions
+- **`packages/agents`**: Agent runtime package (placeholder structure)
+- **`packages/shared`**: Shared utilities and types
+- **VPS Deployment**: Monorepo cloned to `fight-uno` at `/home/vforvaick/.openclaw/mission-control`
+
+### Fixed
+- **Git Submodule Issue**: `packages/dashboard` was accidentally tracked as a git submodule — converted to regular directory
+- **Missing Convex Files**: Restored `convex/` directory to dashboard package after migration
+- **Dependency Conflicts**: Aligned `convex` and `@convex-dev/auth` versions across packages
+
+### Deployed
+- **Vercel**: https://isekai-crossover-legion-dashboard.vercel.app/
+  - Root Directory: `packages/dashboard`
+  - Install Command: `npm install --legacy-peer-deps`
+- **GitHub**: https://github.com/vforvaick/isekai-crossover-legion
+
+### Files Modified
+- `packages/dashboard/convex/*` (restored)
+- `packages/convex/package.json` (version alignment)
+- `packages/dashboard/package.json`, `tsconfig.json`
+
+### Reference
+- Session: 10b3e586-1f1d-4129-95f9-7b4a41dc96ad
+
+---
+
 ## [2026-02-11] - Agent Roster Alignment & Dashboard Sync
 ### Added
 - **Agent Roster Spec Alignment**: Database synced with `PERSONAS.md` (7 active agents, 6 dormant).

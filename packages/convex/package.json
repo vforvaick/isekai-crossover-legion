@@ -1,0 +1,18 @@
+{
+    "name": "@mission-control/convex",
+    "version": "1.0.0",
+    "private": true,
+    "main": "index.ts",
+    "scripts": {
+        "dev": "convex dev",
+        "deploy": "convex deploy",
+        "codegen": "convex dev --once --codegen-only"
+    },
+    "dependencies": {
+        "convex": "^1.16.0",
+        "@convex-dev/auth": "^0.0.65"
+    },
+    "devDependencies": {
+        "@types/node": "^20.0.0"
+    }
+}

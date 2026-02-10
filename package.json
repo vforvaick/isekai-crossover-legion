@@ -1,0 +1,26 @@
+{
+    "name": "mission-control",
+    "version": "2.0.0",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "dev:dashboard": "npm -w @mission-control/dashboard run dev",
+        "dev:agents": "npm -w @mission-control/agents run dev",
+        "build:dashboard": "npm -w @mission-control/dashboard run build",
+        "build:all": "npm run build:dashboard",
+        "deploy:agents": "bash scripts/deploy-agents.sh",
+        "convex:dev": "npm -w @mission-control/convex run dev",
+        "convex:deploy": "npm -w @mission-control/convex run deploy",
+        "lint": "npm run lint --workspaces --if-present",
+        "test": "npm run test --workspaces --if-present"
+    },
+    "devDependencies": {
+        "typescript": "^5.3.0"
+    },
+    "engines": {
+        "node": ">=20.0.0",
+        "npm": ">=10.0.0"
+    }
+}

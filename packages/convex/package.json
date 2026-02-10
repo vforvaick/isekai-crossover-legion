@@ -9,8 +9,8 @@
         "codegen": "convex dev --once --codegen-only"
     },
     "dependencies": {
-        "convex": "^1.16.0",
-        "@convex-dev/auth": "^0.0.65"
+        "convex": "^1.31.7",
+        "@convex-dev/auth": "^0.0.90"
     },
     "devDependencies": {
         "@types/node": "^20.0.0"
